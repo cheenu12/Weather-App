@@ -1,0 +1,73 @@
+body{
+    background-color:#FFFFFF;
+}
+.navcolor
+{
+    background-color: #007BFF;
+    padding: 0%;
+
+}
+
+.whitee
+{
+    color: #FFFFFF;
+}
+
+.marginn
+{
+    margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-right: 33rem;
+   
+}
+
+.right
+{
+    margin-left: 15rem;
+}
+
+.weatherleft
+{
+    margin-left: 2rem;
+}
+
+
+.colorful-table{
+    border-collapse: collapse;
+    margin-bottom: 4rem;
+  }
+  
+  .colorful-table th,
+  .colorful-table td {
+    padding: 10px;
+  }
+  
+  .colorful-table thead {
+    background-color: #007BFF; /* Yellow */
+    color: #FFF;
+  }
+  
+  .colorful-table tbody tr:nth-child(even) {
+    background-color: #E0E0E0; /* Light Gray */
+  }
+  
+  .colorful-table tbody tr:nth-child(odd) {
+    background-color: #F5F5F5; /* Lighter Gray */
+  }
+  
+
+
+  @media only screen and (max-width: 768px) {
+    /* Styles specific to mobile devices */
+    
+    /* Override or modify existing styles for better mobile experience */
+    body{
+        background-color: aqua;
+    }
+
+    
+.right
+{
+    margin-left: 2rem;
+}
+  }

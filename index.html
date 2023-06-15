@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navcolor">
+        <div class="container-fluid navcolor">
+          <a style="font-size: 2rem; font-weight: 600;" class="navbar-brand whitee weatherleft ">Weather App</a>
+          </button>
+          <div class="" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input  value ="Patiala"id ="city" class="form-control me-2 marginn right" type="search" placeholder="Search" aria-label="Search">
+              <button  id="myButt"  class="btn  btn-light marginn" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+
+<h1 class="text-center" style= "margin-top : 2rem; margin-bottom: 1.5rem; " >Weather in <span id ="cityName">Patiala </span> </h1>
+      <!-- //pricing wala section -->
+      <div class="container">
+
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Temperatures</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li> <span style="font-size: 3rem; padding: 0%" id="temp2"></span> </li>
+              <li> Temperature  is <span id="temp"></span></li>
+              <li> Min Temperature is <span id="min_temp"></span></li>
+              <li> Max Temperature is <span id="max_temp"></span></li>
+              
+
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Humidity</h4>
+          </div>
+          <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li> <span style="font-size: 3rem; padding: 0%" id="humidity2"></span> </li>
+                <li> Feels like <span id="feels_like"></span></li>
+                <li> Cloud Pct is <span id="cloud_pct">  </span></li>
+                <li> Humidity is <span id="humidity">  </span></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">About winds  & sun</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li> <span style="font-size: 3rem; padding: 0%" id="wind_speed2"></span> </li>
+                <li>Wind speed is <span id="wind_speed">  </span></li>
+                <li> Sunrise <span id="sunrise">  </span></li>
+                <li>Sunset <span id="sunset">  </span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-family: 'Courier New', Courier, monospace; font-size: 3rem; font-weight: 600;" class="display-6 text-center mb-4">Popular Places</h2>
+
+    <div class="table-responsive">
+      <table  class=" text-center colorful-table">
+        <thead>
+            <tr>
+            <th style="width: 2%;"></th>
+            <th style="width: 2%;">Temp</th>
+            <th style="width: 2%;">Feels_like</th>
+            <th style="width: 2%;">Humidity</th>
+            <th style="width: 2%;">Max_temp</th>
+            <th style="width: 2%;">Min_temp</th>
+            <th style="width: 2%;">Sunrise</th>
+            <th style="width: 2%;">Sunset</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Delhi</th>
+            
+            <td><span id="tempdelhi"></span> </td>
+            <td><span    id="feelldelhi"></span>  </td>
+            <td><span id="humiditydelhi"></span> </td>
+            <td><span  id="maxtempdelhi"></span>  </td>
+            <td><span  id="mintempdelhi"></span>  </td>
+            <td><span  id="sunrisedelhi"></span> </td>
+            <td><span   id="sunsetdelhi"></span> </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Lucknow</th>
+            <td><span id="templucknow"></span></td>
+<td><span id="feelllucknow"></span></td>
+<td><span id="humiditylucknow"></span></td>
+<td><span id="maxtemplucknow"></span></td>
+<td><span id="mintemplucknow"></span></td>
+<td><span id="sunriselucknow"></span></td>
+<td><span id="sunsetlucknow"></span></td>
+
+            
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Bangalore</th>
+            <td><span id="tempbanglaore"></span></td>
+            <td><span id="feellbangalore"></span></td>
+            <td><span id="humiditybangalore"></span></td>
+            <td><span id="maxtempbangalore"></span></td>
+            <td><span id="mintempbangalore"></span></td>
+            <td><span id="sunrisebangalore"></span></td>
+            <td><span id="sunsetbangalore"></span></td>
+            
+          </tr>
+         
+          <tr>
+            <th scope="row" class="text-start">Patiala</th>
+            <td><span id="temppatiala"></span></td>
+            <td><span id="feelpatiala"></span></td>
+            <td><span id="humiditypatiala"></span></td>
+            <td><span id="maxtemppatiala"></span></td>
+            <td><span id="mintemppatiala"></span></td>
+            <td><span id="sunrisepatiala"></span></td>
+            <td><span id="sunsetpatiala"></span></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </main>
+        
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src ="script.js"></script> 
+
+</body>
+</html>
